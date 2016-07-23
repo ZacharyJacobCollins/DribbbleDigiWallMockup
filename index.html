@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Zachary Jacob Collins</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Zachary Jacob Collins</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/quote-card.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
 </head>
-<body>
 
-  <div class="container">
-    <div class="section">   
+<body class="valign-wrapper">
 
-      <!--  wall  -->
-      <div id="quote-wall">
 
-        <template v-for="quote in quotes">
-          <div class="section">
-            <div class="card">
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
-              </div>
+    <!--  wall  -->
+    <div id="vue-quote-card" class="valign">
+        <div class="section">
+            <div class="quote-card z-depth-4">
+                <div class="card-content">
+                    <p>{{ testQuote.text }}</p>
+                </div>
             </div>
-          </div>
-        </template>
-        
-      </div> <!--  /wall    -->
+        </div>
 
-    </div> <!-- /section -->
+    </div>
+    <!--  /wall    -->
 
-    <ul id="example-1">
-  <li v-for="item in items">
-    {{ item.message }}
-  </li>
-</ul>
-
-    <br><br>
-
-  </div> <!-- /container -->
+    </div>
 
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
 
-  
-  <!-- Vue.js --> 
-  <script src="js/vue.js"></script>
-  <script src="js/quotes.js"></script>
-  </body>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+
+    <!-- Vue.js -->
+    <script src="js/vue.js"></script>
+    <script src="js/components/quotes.js"></script>
+
+</body>
+
 </html>

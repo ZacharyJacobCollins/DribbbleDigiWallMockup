@@ -1,0 +1,36 @@
+body {
+    background-color: #4C4F52;
+}
+
+.quote-card {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    /*Positioning*/
+    left: 50%;
+    top: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-image: url("../images/flag.png");
+}
+
+.quote-card-image {
+    color: #7a7f80
+}
+
+
+/*Media Queries*/
+@media (max-width: 500px) {
+    .quote-card {
+        width: 300px;
+    }
+}
+
+@media (max-height: 600px) {
+    .quote-card {
+        width: 375px;
+    }
+}
