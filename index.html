@@ -41,9 +41,9 @@
 
                     <!-- quote container -->
                     <div class="valign-wrapper">
-                        <div class="btn-container"><a class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
-                        <h5 class="white-text quote-container center-align">{{ testQuote.text }}</h5>  
-                        <div class="btn-container"><a class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <div class="btn-container"><a @click="current -= 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <h5 class="white-text quote-container center-align">{{ quotes[current].text }}</h5>  
+                        <div class="btn-container"><a @click="current += 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
                     </div>
                     <!-- /quote container -->
 
@@ -53,9 +53,9 @@
                     <!-- quote avatar -->
                     <div class="center-align">
                         <div class="row">
-                            <img src="images/sneakers.png" alt="" class="avatar"> <!-- notice the "circle" class -->
+                            <img src="{{ quotes[current].avatar }}" alt="" class="avatar"> <!-- notice the "circle" class -->
                         </div>
-                        <h6 class="white-text thin">{{ testQuote.author }}</h6>
+                        <h6 class="white-text thin">{{ quotes[current].author }}</h6>
                     </div>
 
                     <h3>  </h3>
