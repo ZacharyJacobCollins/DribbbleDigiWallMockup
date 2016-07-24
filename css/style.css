@@ -1,6 +1,23 @@
-body {
-    background-color: #4C4F52;
+/*Index page stylings*/
+
+.index-container {
+    display: flex;
 }
+
+.index-nav-container {
+    align-self: flex-start;
+    height: 3rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+.index-nav-icon {
+    height: 3rem; 
+
+}
+
+
+/*Quote-card page stylings*/
 
 .quote-card {
     position: absolute;
@@ -44,10 +61,6 @@ body {
 
 }
 
-.accent {
-    color: #2EC7BF; 
-}
-
 .btn-container {
     display:flex;
     justify-content: center;
@@ -70,6 +83,14 @@ body {
     color: #2EC7BF; 
     background-color: #4C4F52;
     align-self: flex-end;
+}
+
+.accent {
+    color: #2EC7BF; 
+}
+
+.custom-grey-bg {
+    background-color: #4C4F52;
 }
 
 /*Media Queries*/
