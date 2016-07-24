@@ -2,8 +2,8 @@ var quotes = new Vue({
     el: '#vue-quote-card',
     data: {
         testQuote: {
-            text: 'Our hearts year for each other, we just want someone to finally see us. - C.A. Cardinal',
-            author: 'adfasdfsdafdsaf'
+            text: 'Our hearts year for each other, we just want someone to finally see us.',
+            author: 'C.A. Cardinal'
         },
         quotes: [{
             text: 'Our hearts year for each other, we just want someone to finally see us. - C.A. Cardinal',
