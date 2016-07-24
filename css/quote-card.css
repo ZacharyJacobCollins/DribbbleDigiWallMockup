@@ -5,7 +5,7 @@ body {
 .quote-card {
     position: absolute;
     width: 500px;
-    height: 600px;
+    height: 650px;
     /*Positioning*/
     left: 50%;
     top: 50%;
@@ -39,6 +39,9 @@ body {
 .quote-container {
     display: inline-block;
     width: 60%;
+    height: 135px;
+    min-height: 135px;
+
 }
 
 .accent {
@@ -56,6 +59,11 @@ body {
     width: 75px;
     height: 75px;
     border: 2px solid #2EC7BF;
+}
+
+.quote-symbol {
+    color: #2EC7BF; 
+    font-size: 250%;
 }
 
 /*Media Queries*/

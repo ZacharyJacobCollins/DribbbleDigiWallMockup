@@ -13,13 +13,13 @@
 
 </head>
 
-<body class="valign-wrapper">
+<body>
 
 
     <!--  card  -->
     <div id="vue-quote-card">
         <div class="section">
-            <div class="quote-card z-depth-4">
+            <div class="quote-card z-depth-5">
                 <div class="quote-card-background"></div>
                 
                     <!-- nav -->
@@ -37,15 +37,23 @@
                     </div>
                     <!-- /nav -->
 
+
+
                     </br></br></br></br>
 
                     <!-- quote container -->
                     <div class="valign-wrapper">
-                        <div class="btn-container"><a @click="current -= 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
-                        <h5 class="white-text quote-container center-align">{{ quotes[current].text }}</h5>  
-                        <div class="btn-container"><a @click="current += 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <div class="btn-container"><a v-if="current >= 1" @click="current -= 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <div class="quote-container"> 
+                            <h5 class="white-text center-align">
+                                <span class="quote-symbol">“</span> {{ quotes[current].text }}
+                            </h5> 
+                        </div>    
+                        <div class="btn-container"><a v-if="current < quotes.length" @click="current += 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
                     </div>
                     <!-- /quote container -->
+
+
 
                     </br></br></br></br>
 
@@ -57,15 +65,13 @@
                         </div>
                         <h6 class="white-text thin">{{ quotes[current].author }}</h6>
                     </div>
-
-                    <h3>  </h3>
+                    <!-- quote avatar -->
+                    
             </div>
         </div>
-
     </div>
     <!--  /card    -->
 
-    </div>
 
 
 
