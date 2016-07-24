@@ -1,6 +1,7 @@
 var quotes = new Vue({
     el: '#vue-quote-card',
     data: {
+        current: 0,
         testQuote: {
             text: 'Our hearts year for each other, we just want someone to finally see us.',
             author: 'C.A. Cardinal'
@@ -60,5 +61,10 @@ var quotes = new Vue({
             text: 'Details matter.  It\'s worth waiting to get it right',
             author: 'Steve Jobs'
         }]
+    },
+    methods: {
+        displayQuote: function() {
+            return this.i;
+        }
     }
 });
