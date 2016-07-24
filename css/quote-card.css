@@ -66,6 +66,12 @@ body {
     font-size: 250%;
 }
 
+.loader-bar {
+    color: #2EC7BF; 
+    background-color: #4C4F52;
+    align-self: flex-end;
+}
+
 /*Media Queries*/
 @media (max-width: 500px) {
     .quote-card {

@@ -8,13 +8,11 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/quote-card.css" type="text/css" rel="stylesheet" media="screen,projection" />
-
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/quote-card.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 
 <body>
-
 
     <!--  card  -->
     <div id="vue-quote-card">
@@ -26,7 +24,7 @@
                     <div class="section">
                         <div class="row">
                             <div class="col s2 m2">
-                                <h6 class="white-text"> {{ current }} of {{ quotes.length }} </h6>
+                                <h6 class="white-text"> {{ current + 1 }} of {{ quotes.length }} </h6>
                             </div>
                             <div class="btn-container right accent">
                                 <a class="btn-floating btn">
@@ -36,8 +34,6 @@
                         </div>
                     </div>
                     <!-- /nav -->
-
-
 
                     </br></br></br></br>
 
@@ -49,14 +45,14 @@
                                 <span class="quote-symbol">“</span> {{ quotes[current].text }}
                             </h5> 
                         </div>    
-                        <div class="btn-container"><a v-if="current < quotes.length" @click="current += 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <div class="btn-container"><a v-if="current < quotes.length-1" @click="current += 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
                     </div>
                     <!-- /quote container -->
 
 
 
-                    </br></br></br></br>
-
+                    </br></br></br></br></br>
+        
 
                     <!-- quote avatar -->
                     <div class="center-align">
@@ -66,13 +62,19 @@
                         <h6 class="white-text thin">{{ quotes[current].author }}</h6>
                     </div>
                     <!-- quote avatar -->
-                    
+
+                    </br></br></br></br>
+        
+
+                    <div class="progress loader-bar">
+                        <div class="determinate" style="width: {{ current * 5 }}%"></div>
+                    </div>
             </div>
+      
         </div>
+       
     </div>
     <!--  /card    -->
-
-
 
 
 
