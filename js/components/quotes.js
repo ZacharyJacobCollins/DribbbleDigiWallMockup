@@ -11,7 +11,7 @@ var quotes = new Vue({
         quotes: [{
             text: 'Our hearts year for each other, we just want someone to finally see us. - C.A. Cardinal',
             author: 'C.A. Cardinal',
-            avatar: 'images/.png',
+            avatar: 'images/sneakers.png',
             background: ''
         }, {
             text: 'The most intense fight a human will ever have is between the person they are and the person they are capable of becoming.',
