@@ -11,10 +11,14 @@
     width: 100%;
 }
 
-.index-nav-icon {
+.nav-icon-container {
+    display: inline-flex;
     height: 3rem; 
-
+    width: 3rem;
+    justify-content: center;
+    color: black;
 }
+
 
 
 /*Quote-card page stylings*/

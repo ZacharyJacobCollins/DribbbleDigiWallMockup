@@ -1,5 +1,7 @@
 #Dependencies
     * Utilizes vue.js because it's fucking awesome.
-    * Materialize Icons come from <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     * Materialize front-end framework http://materializecss.com/
-    
+
+#Credits 
+    * Heavily influenced by https://dribbble.com/shots/2652364-Digital-Walls
+    * Additional Icons found here https://materialdesignicons.com/
