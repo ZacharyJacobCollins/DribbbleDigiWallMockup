@@ -7,6 +7,9 @@ new Vue({
       navicon: {
           props: ['icon'],
           template: '<div class="nav-icon-container valign-wrapper"><i class="material-icons valign">{{ icon }}</i></div>'
+      }, 
+      clock: {
+          template: '<div class="nav-clock-container">test</div>'
       }
   },
   methods: { 
