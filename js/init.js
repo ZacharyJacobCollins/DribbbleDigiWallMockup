@@ -1,6 +1,7 @@
 (function($){
   $(function(){
 
+    //Side Nav
     $('.button-collapse').sideNav();
 
   }); // end of document ready

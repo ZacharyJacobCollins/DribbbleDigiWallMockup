@@ -40,13 +40,13 @@
 
                     <!-- quote container -->
                     <div class="valign-wrapper">
-                        <div class="btn-container"><a v-if="current >= 1" @click="current -= 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <div class="btn-container"><a v-if="current >= 1" @click="current -= 1" class="quote-btn btn-floating btn valign custom-grey-bg"><i class="material-icons">keyboard_arrow_left</i></a></div>
                         <div class="quote-container"> 
                             <h5 class="white-text center-align">
                                 <span class="quote-symbol">“</span> {{ quotes[current].text }}
                             </h5> 
                         </div>    
-                        <div class="btn-container"><a v-if="current < quotes.length-1" @click="current += 1" class="btn-floating btn valign grey darken-4"><i class="material-icons">settings</i></a></div>
+                        <div class="btn-container"><a v-if="current < quotes.length-1" @click="current += 1" class="quote-btn btn-floating btn valign custom-grey-bg"><i class="material-icons">keyboard_arrow_right</i></a></div>
                     </div>
                     <!-- /quote container -->
 

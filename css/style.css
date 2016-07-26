@@ -1,11 +1,11 @@
 /*Index page stylings*/
 
-.index-container {
-    display: flex;
+/*Calculate the height of the screen and set to - 6 rem for top and bottom navs*/
+.index-page {
+    display:flex;
 }
 
 .nav-container {
-    align-self: flex-start;
     height: 3rem;
     border-bottom: 1px solid black;
     width: 100%;
@@ -19,15 +19,77 @@
     color: black;
 }
 
-.nav-clock-container{
+.nav-clock-container {
     display: inline-flex;
-    float: right;
     height: 3rem; 
     width: 6rem;
     justify-content: center;
     color: black;
+    font-size: 175%;
 }
 
+.index-footer {
+    width: 100%;
+    height: rem;
+    align-items: flex-end;
+    border-top: 1px solid #000;
+}
+
+.tab-nav {
+    margin: 0;
+    width: 28rem;
+    border-right: 1px solid #000;
+}
+
+.tab {
+    height: 10em;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 1px solid #000;
+}
+
+.tab-end {
+    border: none;
+}
+
+.tab-image {
+    height: 6rem;
+    width: 6rem;
+}
+
+.tab-text {
+    display: flex;
+    float: right;
+    justify-content: center;
+    width: 8rem;
+}
+
+.large-pane {
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 50px; 
+    right: 0;
+    width: 85rem;
+    height: 35rem;
+    border: 1px solid #000;
+    z-index: 50;
+}
+
+.small-collection-pane {
+    margin: auto;
+    position: absolute;
+    top: 250px; 
+    left: 100px; 
+    bottom: 8px; 
+    right: 0;
+    width: 85rem;
+    height: 25rem;
+    border: 1px solid #000;
+    z-index: 100;
+}
 
 
 /*Quote-card page stylings*/
@@ -76,8 +138,13 @@
 
 .btn-container {
     display:flex;
+    height: 135px;
     justify-content: center;
     width: 20%;
+}
+
+.quote-btn {
+    align-self: flex-end;
 }
 
 .avatar {
